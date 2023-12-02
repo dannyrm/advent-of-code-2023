@@ -5,7 +5,7 @@ fun main() {
         return "${digitsOnly.first()}${digitsOnly.last()}".toInt()
     }
 
-    fun convertWordsToDigits2(line: String): String {
+    fun convertWordsToDigits(line: String): String {
         val numberStrings = listOf("one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "1", "2", "3", "4", "5", "6", "7", "8", "9")
 
         val matchList : MutableList<Pair<Int, String>> = mutableListOf()
@@ -48,7 +48,7 @@ fun main() {
         var total = 0
 
         for (line in input) {
-            val digitsOnly = convertWordsToDigits2(line)
+            val digitsOnly = convertWordsToDigits(line)
             total += "${digitsOnly.first()}${digitsOnly.last()}".toInt()
         }
 
